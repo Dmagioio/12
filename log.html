@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Animated Glassmorphism Login Page | @codingstella</title>
+    <link rel="stylesheet" href="style-l.css" />
+
+    <script>
+      function validatePassword() {
+          var password = document.getElementById("password").value;
+          if (password === "03.02.2023") {
+              window.location.href = "index.html"; // Перенаправлення на сторінку вітаємо, якщо пароль вірний
+          } else {
+              alert('⛧ ПІДКАЗКА ⛧ можливо це якась важлива дата. Наприклад: "22.05.2008" '); // Повідомлення про помилку
+          }
+      }
+    </script>
+  </head>
+  <body>
+    <section>
+      <div class="leaves">
+        <div class="set">
+          <div><img src="leaf_01.png" /></div>
+          <div><img src="leaf_02.png" /></div>
+          <div><img src="leaf_03.png" /></div>
+          <div><img src="leaf_04.png" /></div>
+          <div><img src="leaf_01.png" /></div>
+          <div><img src="leaf_02.png" /></div>
+          <div><img src="leaf_03.png" /></div>
+          <div><img src="leaf_04.png" /></div>
+        </div>
+      </div>
+      <img src="bg.jpg" class="bg" />
+      <img src="girl.png" class="girl" />
+      <img src="trees.png" class="trees" />
+      <div class="login">
+        <h2>Enter <br> with love</h2>
+        <!-- <div class="inputBox"><input type="text" placeholder="Username"></div> -->
+        <div class="inputBox">
+          <input type="password" placeholder="Password" id="password">
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="Login" id="btn" onclick="validatePassword()">
+        </div>
+        <div class="group">
+          <a href="#">Forget Password</a>
+          <a href="#">Signup</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
